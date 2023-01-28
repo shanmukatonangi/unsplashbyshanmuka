@@ -1,0 +1,133 @@
+.navcont{
+    display: flex;
+  justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.navcont img{
+    height: 50px;
+}
+
+.searchf{
+    width: 50%;
+   
+}
+.navlinks{
+    color: gray;
+}
+.navlinks:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.my-masonry-grid {
+    
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+    
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px;
+    background-clip: padding-box;
+
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    background: rgb(252, 252, 252);
+    margin-bottom: 30px;
+  }
+
+  .categories{
+    width: 100%;
+    display: flex;
+}
+
+.categories__item{
+    display: block;
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    padding: 1rem 0.5rem;
+    margin: 0 0.5rem;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    overflow-wrap: unset;
+    display: inline-block;
+}
+
+.categories__item:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.categories__item--active{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.categories__breaker{
+    border-left: 1px solid rgb(211, 211, 211);
+    margin: 0.4rem 0;
+}
+
+.categories__list{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.categories__list{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+ .categories__list::-webkit-scrollbar {
+   display: none;  
+}
+
+@media screen and (max-width:450px){
+    .categories__breaker{
+        display: none;
+    }
+}
+#him{
+  height: 80vh;
+}
+
+@media screen and (max-width:600px) {
+  .navlinks{
+    display: none;
+  }
+  .uns{
+    display: none;
+  }
+  .sap{
+    display: none;
+  }
+  #him{
+    height: 40vh;
+
+  }
+  .sei{
+    display: none;
+  }
+  
+}
+
+
+.sap{
+  padding: 5px;
+  border: 1px solid rgb(176, 174, 174);
+  border-radius: 3px;
+  color: gray;
+}
+.sap:hover{
+  color: black;
+  cursor: pointer;
+}
